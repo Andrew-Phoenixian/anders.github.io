@@ -1,1 +1,670 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anders Hagås - Personlig CV</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Anders Hagås" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Anders Hagås">Anders Hagås</h1>
+
+          <p class="title">Backend Utvikler</p>
+          <p class="title">IKT-servicemedarbeider</p>
+          <p class="title">Teknisk Reparatør</p>
+
+          <div class="separator"></div>
+
+          <p class="title">Service Innstilt</p>
+          <p class="title">"Quick Learner"</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">E-mail</p>
+
+              <a href="mailto:anders@eontempo.no" class="contact-link">anders@eontempo.no</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Mobil</p>
+
+              <a href="tel:+47392701" class="contact-link">+47 473 92 701</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Bursdag</p>
+
+              <time datetime="1982-06-23">24 August, 2000 (22)</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Lokasjon</p>
+
+              <address>Horten, Norway</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/anders.hagaas1" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com/ReturnVoidex" target="_blank" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/returnvoidex/" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>Om</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>CV</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfølge</button>
+          </li>
+
+          <!--
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+        -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Kontakt</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="om">
+
+        <header>
+          <h2 class="h2 article-title">Om Meg</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Jeg er en IKT-servicemedarbeider som elsker og yte service innenfor IKT-bransjen om det er innenfor skoler,
+            kjøpesentere, bedriftsbygg, bibliotek, you name it.
+            Personlig så har jeg 3 års erfaring med fagbrev som IKT-servicemedarbeider samt. mye kunnskaper ifra min
+            koding og fritidsprosjekter i en alder av 22.
+          </p>
+
+          <p>
+            I fritiden er jeg sosial og utgående person, jeg holder også på med dans innenfor Wotagei med et team fra
+            Taiwan.
+          </p>
+
+          <p>
+            Velkommen til meg. 😊
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Hva Jeg Holder På Med</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Spill utvikler og omegn</h4>
+
+                <p class="service-item-text">
+                  Jeg har jobbet med et mangfold av spill prosjekter og diverse.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">.NET Utvikler</h4>
+
+                <p class="service-item-text">
+                  Diverse fritidsprosjekter som også berører jobb.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-customer-support.png" alt="customer support icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Service Medarbeider</h4>
+
+                <p class="service-item-text">
+                  En serviceorientert teknisk medarbeider med fagbrev som IKT-servicemedarbeider.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-gamer.png" alt="gamer icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Gamer</h4>
+
+                <p class="service-item-text">
+                  Jeg er en gamer ut og inn, og er også hvor min utvikler lidenskap ble født.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-team.png" alt="team leader icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Prosjekt Leder</h4>
+
+                <p class="service-item-text">
+                  Jeg er og har vært prosjekt leder for flere utviklingsbaserte prosjekter.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Attester
+        -->
+
+        <section class="attester">
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </section>
+
+        </div>
+
+        <!--
+          - clients
+        -->
+
+        
+
+      </article>
+
+
+      <!--
+        - #CV
+      -->
+
+      <article class="resume" data-page="cv">
+
+        <header>
+          <h2 class="h2 article-title">CV</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Utdanning</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Skien Videregående Skole</h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                IKT-servicefag med utplassering hver uke hele året på Nome videregående skole som IT.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Nome Videregående Skole</h4>
+
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                Elektrofag med yrkesfagligfordypning i IKT: Arbeid og oppsett av server.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Erfaring</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Butikkansvarlig og Mobiltekniker</h4>
+
+              <span>2021 — 2022</span>
+
+              <p class="timeline-text">
+                Jeg var hovedsakelig plassert i Tønsberg i Farmandstredet. Her var vi ett
+                støtte punkt for de som trengte hjelp med sin telefon, enten det var
+                veiledning, teknisk støtte, telefon reparasjon som batteribytte, skjermbytte,
+                kabler/mikrofoner osv.
+              </p>
+
+              <div class="separator"></div>
+
+              <p class="timeline-text">
+                Vi reparerte stort sett innen timen og fikk god trening innen både
+                kundeservice og mobil support.
+                Ganske fort ble jeg oppnevnt som butikkansvarlig og hadde som ansvar for
+                vår "helpdesk", samt å være oppdatert på brannkontroller,
+                rømningsprotokoller og opplæring av utplasserings elever.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lærling IT - Vestfold og telemark Fylkeskommune</h4>
+
+              <span>2018 - 2020</span>
+
+              <p class="timeline-text">
+                Nome Videregående Skole avd. Lunde og Søve.
+              </p>
+
+              <div class="separator"></div>
+
+              <p class="timeline-text">
+                Visma systemer, feide, fronter, Microsoft apper (word, excel, teams,
+                powerpoint), egne switchoppsett,
+                Cisco infrastruktur og nettverks administrasjon. Feilsøking av type
+                nettverksfeil, hardware feil og
+                software feil.
+              </p>
+              <div class="separator"></div>
+              <p class="timeline-text">
+                Programmering og utvikling av BarCro for internteam, ett
+                macro styrt strekkode system.
+              </p>
+              <p class="timeline-text">
+                Som IKT-lærling på Nome vgs. så fikk vi mye alene tid. Vi gikk også igjennom 3 IKT-ansvarlige, hvor en
+                av de var veldig lite tilstedeværende på jobb,
+                og skapte store probelemer for oss lærlinger men vi fikk fortsatt god trening med å jobbe alene.
+              </p>
+              <p class="timeline-text">
+                Har også gjort en del med PC-utleveringer, PC-klargjøring ved skolestart/slutt. Registrering av Elev-PC avtaler, leveranser, samt bestilling av utstyr og reparasjoner. (F.x ricoh printere eller nytt innkjøp av projektorer.)
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfølge">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <h1 class="p2 article-description">Her vil du finne alle mine projekter, samt nettsider, github linker eller noe som beskriver hva jeg har gjort og har hatt ansvar for.</h1>
+
+        <div class="separator"></div>
+
+        <h1 class="p2 article-description">Denne siden blir rullerende oppdatert, dog jeg har mange prosjekter å legge inn.</h1>
+
+        <div class="separator"></div>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>Alle</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Spill Utvikling</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>.NET Applikasjoner</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Discord</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Backend</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>Alle</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Spill Utvikling</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>.NET Applikasjoner</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Discord</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Backend</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="discord">
+              <a href="https://github.com/Andrew-Phoenixian/Project-Homecoming/blob/main/README.md" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.gif" alt="homecoming" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Project Homecoming</h3>
+
+                <p class="project-category">Discord</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category=".net applikasjoner">
+              <a href="https://github.com/Andrew-Phoenixian/Inventar/blob/main/README.md" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="inventar" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Inventar</h3>
+
+                <p class="project-category">.NET Applikasjoner</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #KONTAKT
+      -->
+
+      <article class="contact" data-page="kontakt">
+
+        <header>
+          <h2 class="h2 article-title">Kontakt</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed/v1/place?q=Langgata+29B,+Horten,+Norge&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Kontakt Meg</h3>
+
+          <p class="h1 project-category">
+            Du kan kontakte meg ved å sende en melding til mitt nummer eller sende mail til min addresse på venstre
+            side.
+          </p>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
