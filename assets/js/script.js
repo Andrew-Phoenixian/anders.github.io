@@ -79,13 +79,26 @@ const filterFunc = function (selectedValue) {
 
   for (let i = 0; i < filterItems.length; i++) {
 
+    // new functionality, a category can now have two selections, split with a |
     if (selectedValue === "alle") {
       filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
+    } else {
+      const categories = filterItems[i].dataset.category.split("|");
+      if (categories.includes(selectedValue)) {
+        filterItems[i].classList.add("active");
+      } else {
+        filterItems[i].classList.remove("active");
+      }
+    }
+
+
+
+    /* gammel kode
+    else if (selectedValue === filterItems[i].dataset.category) {
       filterItems[i].classList.add("active");
     } else {
       filterItems[i].classList.remove("active");
-    }
+    }*/
 
   }
 
